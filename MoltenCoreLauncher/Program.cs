@@ -89,10 +89,10 @@ class Launcher
             var newVersion = Version.Parse(latestLauncherVersion.TagName);
             if (newVersion > myVersion)
             {
-                Console.WriteLine($"New launcher update {myVersionStr} => {latestLauncherVersion.TagName}");
+                Console.WriteLine($"登陆器版本过期 {myVersionStr} => {latestLauncherVersion.TagName}");
                 if (onlyNotify)
                 {
-                    Console.WriteLine("A new version was released, please update");
+                    Console.WriteLine("新版本登陆器已发布，请更新");
                     Console.WriteLine("https://gitee.com/EverCore/MoltenCoreLauncher/releases");
                     Thread.Sleep(TimeSpan.FromSeconds(12));
                 }
@@ -238,7 +238,7 @@ class Launcher
         }
         else
         {
-            Console.WriteLine($"Found client{(weAreOnMacOs ? " (mac)" : "")} in {gamePath}");
+            Console.WriteLine($"检测到客户端 {gamePath}");
         };
     }
 
