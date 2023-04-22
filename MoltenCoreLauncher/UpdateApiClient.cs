@@ -45,7 +45,7 @@ public class UpdateApiClient
 
     private static GitHubReleaseInfo GetGitHubReleaseInfo(string repo)
     {
-        var releaseUrl = $"https://gitee.com/api/v5/repos/{repo}/releases/latest";
+        var releaseUrl = $"{repo}";
         var releaseInfo = PerformWebRequest<GitHubReleaseInfo>(releaseUrl);
         return releaseInfo;
     }
