@@ -13,9 +13,9 @@ public class LauncherConfig
     [Obsolete("Replaced with 'GitRepoMoltenCoreLauncher'")]
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public string? GitRepoEverlookClassic  { get; set; }
-    public string GitRepoMoltenCoreLauncher { get; set; } = "https://gitee.com/EverCore/MoltenCoreLauncher";
-    public string GitRepoHermesProxy { get; set; } = "https://gitee.com/EverCore/HermesProxy";
-    public string GitRepoArctiumLauncher { get; set; } = "https://gitee.com/EverCore/WoWLauncher";
+    public string GitRepoMoltenCoreLauncher { get; set; } = "wolone/MoltenCoreLauncher";
+    public string GitRepoHermesProxy { get; set; } = "wolone/HermesProxy";
+    public string GitRepoArctiumLauncher { get; set; } = "Arctium/WoW-Launcher";
 
     public string WindowsGameDownloadUrl { get; set; } = DEFAULT_DOWNLOAD_URL;
     public string MacGamePatchDownloadUrl { get; set; } = DEFAULT_DOWNLOAD_URL;

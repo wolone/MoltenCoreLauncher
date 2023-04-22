@@ -45,7 +45,7 @@ public class UpdateApiClient
 
     private static GitHubReleaseInfo GetGitHubReleaseInfo(string repo)
     {
-        var releaseUrl = $"{repo}";
+        var releaseUrl = $"https://api.github.com/repos/{repo}/releases/latest";
         var releaseInfo = PerformWebRequest<GitHubReleaseInfo>(releaseUrl);
         return releaseInfo;
     }
